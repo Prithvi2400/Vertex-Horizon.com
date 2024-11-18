@@ -1,0 +1,213 @@
+/* Contact Us Page Styling */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.image {
+    margin-left: 0px; /* Pushes the image to the left */
+}
+
+.image img {
+    height: 110px; /* Adjust the size of the logo */
+    width: auto;
+    margin: -50px -470px;
+}
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    
+    background-color:  rgb(0, 0, 0);;    
+
+}
+nav ul{
+
+    display: flex;
+
+justify-content:center;
+}
+nav ul li{
+        list-style: none;
+        margin: 0 25px;
+      
+    
+}
+nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: medium;
+  
+
+}
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: rgba(255, 255, 255, 0);
+    font-family: Arial, sans-serif; /* Optional: Add a font-family for better appearance */
+    min-height: 100vh; /* Ensures body takes up at least the full height of the viewport */
+}
+
+/* Animation Container Styling */
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height to fit remaining viewport minus header */
+    width: 100%; /* Ensures full width */
+}
+
+/* Glass Effect */
+
+.background{
+ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.glassy-box {
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4xp 30px rgba(255, 254, 254, 0);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.glassy-box h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #f0f0f0;
+}
+
+.glassy-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Positioning for the email and phone boxes */
+.email-box {
+    top: 20%;
+    left: 10%;
+}
+
+.phone-box {
+    top: 20%;
+    right: 10%;
+}
+
+.watsapp{
+    margin-top: 10px;
+    width: 90%;
+   max-width: 380px;
+   justify-content: center;
+   /*background: linear-gradient(135deg,#00feba,#5b548a);*/ 
+   color: #fff;
+   margin: 265px auto 0;
+   border-radius: 20px;
+   padding: 55px 45px;
+   text-align: center;  
+   background: rgba(255,255, 255, 0.1);
+   box-shadow: 0 4xp 30px rgba(0,0, 0, 0);
+   backdrop-filter: blur(1.8px);
+   -webkit-backdrop-filter: blur(1.8px);
+   border: 1px solid rgba(255,255,255,0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+.watsapp:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.heading{
+
+    cursor: pointer;
+}
+.glowing-img {
+    width: 100%; /* Adjust the size as needed */
+    height: auto; /* Keep the image's aspect ratio */
+    box-shadow: 0 0 15px rgba(69, 0, 160, 0.7), 
+                0 0 30px rgba(67, 0, 134, 0.577), 
+                0 0 45px rgba(35, 0, 73, 0.312);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.glowing-img:hover {
+    box-shadow: 0 0 20px rgb(132, 0, 255), 
+                0 0 40px rgba(170, 0, 255, 0.8), 
+                0 0 60px rgba(136, 0, 255, 0.6);
+}
+.glowing-img{
+    border: none;
+    background: none;
+    box-shadow:none;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    .image img {
+        height: 80px; /* Adjust logo size for mobile */
+        margin: 0; /* Remove margin */
+    }
+
+    .glassy-box {
+        width: 90%; /* Make glassy box responsive */
+        height: auto; /* Allow height to adjust */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .watsapp {
+        width: 90%; /* Make WhatsApp box responsive */
+        padding: 30px 20px; /* Adjust padding */
+        margin: 200px auto 0; /* Center the box */
+    }
+
+    .animation {
+        height: auto; /* Allow animation container to adjust height */
+        padding: 20px; /* Add padding */
+    }
+
+    .glowing-img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto; /* Keep the image's aspect ratio */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+}
